@@ -1,8 +1,4 @@
-## This project is now in maintenance mode. We cannot promise to review contributions. Please feel free to fork the project to apply any changes you might want to make.
-
-
-
-
+## This project is now in maintenance mode. We cannot promise to review contributions. Please feel free to fork the project to apply any changes you might want to make
 
 <p align="center">
   <img width="200" src="https://docs.driftctl.com/img/driftctl_dark.svg" alt="driftctl">
@@ -44,7 +40,6 @@ You can't efficiently improve what you don't track. We track coverage for unit t
 
 Spot discrepancies as they happen: driftctl is a free and open-source CLI that warns of infrastructure drifts and fills in the missing piece in your DevSecOps toolbox.
 
-
 ## Features
 
 - **Scan** cloud provider and map resources with IaC code
@@ -57,8 +52,6 @@ Spot discrepancies as they happen: driftctl is a free and open-source CLI that w
 **[Documentation](https://docs.driftctl.com)**
 
 **[Installation](https://docs.driftctl.com/installation)**
-
-**[Discord](https://discord.gg/7zHQ8r2PgP)**
 
 ## Contribute
 

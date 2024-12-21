@@ -49,7 +49,7 @@ checksum:
 snapshot:
     version_template: "{{ .Tag }}-next"
 # blobs:
-#     - provider: s3
-#       bucket: snyk-assets
-#       region: us-east-1
-#       directory: "cli/driftctl/{{.Tag}}"
+#   - provider: s3
+#     bucket: snyk-assets
+#     region: us-east-1
+#     directory: "cli/driftctl/{{.Tag}}"

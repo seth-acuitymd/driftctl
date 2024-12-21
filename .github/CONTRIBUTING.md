@@ -90,7 +90,7 @@ To ensure that the upgrade has worked correctly, be sure to run the unit test su
 Because dependency changes affect a shared, top-level file, they are more likely than some other change types to become conflicted with other proposed changes during the code review process.
 For that reason, and to make dependency changes more visible in the change history, we prefer to record dependency changes as separate commits that include only the results of the above commands and the minimal set of changes to driftctl's own code for compatibility with the new version:
 
-```
+```shell script
 git add go.mod go.sum
 git commit -m "go get github.com/hashicorp/terraform@13.0.0"
 ```

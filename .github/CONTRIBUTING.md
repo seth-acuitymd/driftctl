@@ -1,24 +1,20 @@
-## This project is now in maintenance mode. We cannot promise to review contributions. Please feel free to fork the project to apply any changes you might want to make.
+# Contributing
 
+## Build
 
+### Requirements
 
+If you wish to work on the driftctl CLI source code, you'll first need to install:
 
+- the Go compiler
+- the version control system Git
+- [GoReleaser](https://goreleaser.com/)
 
-
-
-
-
-
-
-### Build
-
-If you wish to work on the driftctl CLI source code, you'll first need to install the Go compiler and the version control system Git.
-
-At this time the driftctl development environment is targeting only Linux Mac OS X and Windows systems.
+At this time the `driftctl` development environment is targeting only Linux Mac OS X and Windows systems.
 
 Refer to the file [`.go-version`](https://github.com/cloudskiff/driftctl/blob/master/.go-version) to see which version of Go driftctl is currently built with. Other versions will often work, but if you run into any build or testing problems please try with the specific Go version indicated. You can optionally simplify the installation of multiple specific versions of Go on your system by installing [`goenv`](https://github.com/syndbg/goenv), which reads `.go-version` and automatically selects the correct Go version.
 
-Use Git to clone this repository into a location of your choice. driftctl is using [Go Modules](https://blog.golang.org/using-go-modules), and so you should *not* clone it inside your `GOPATH`.
+Use Git to clone this repository into a location of your choice. `driftctl` is using [Go Modules](https://blog.golang.org/using-go-modules), and so you should *not* clone it inside your `GOPATH`.
 
 Switch into the root directory of the cloned repository and build driftctl using GNU Make:
 
@@ -100,4 +96,3 @@ git commit -m "go get github.com/hashicorp/terraform@13.0.0"
 ```
 
 You can then make use of the new or updated dependency in code added in subsequent commits.
-

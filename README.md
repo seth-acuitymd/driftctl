@@ -21,6 +21,12 @@ _some_ GitHub Support?
 
 :warning: - No guarantees on this project, I'm just doing this for my own use and hoping it'll pick up steam
 
+---
+
+# Legacy README
+
+## Contents below this are from the original `snyk/driftctl` project and may not be accurate, current, and may be removed at some point
+
 ## Why `driftctl` ?
 
 Infrastructure drift is a blind spot and a source of potential security issues.

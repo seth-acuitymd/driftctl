@@ -2,7 +2,11 @@
 
 ## This project was forked from `snyk/driftctl` which is now in maintenance mode
 
-## I ([seth](https://github.com/seth-acuitymd)) am going to see if I can get this project moving again, at least for my own use
+I ([seth](https://github.com/seth-acuitymd)) am going to see if I can get this project moving again, at least for my own use
+
+I have also forked the `driftctl-action`, which is here: [seth-acuitymd/driftctl-action](https://github.com/seth-acuitymd/driftctl-action)
+
+---
 
 ## What is `driftctl`?
 

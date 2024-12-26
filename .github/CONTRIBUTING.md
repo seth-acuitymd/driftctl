@@ -10,9 +10,9 @@ If you wish to work on the driftctl CLI source code, you'll first need to instal
 - the version control system Git
 - [GoReleaser](https://goreleaser.com/)
 
-At this time the `driftctl` development environment is targeting only Linux Mac OS X and Windows systems.
+At this time the `driftctl` development environment is targeting Linux MacOS, and Windows systems.
 
-Refer to the file [`.go-version`](https://github.com/cloudskiff/driftctl/blob/master/.go-version) to see which version of Go driftctl is currently built with. Other versions will often work, but if you run into any build or testing problems please try with the specific Go version indicated. You can optionally simplify the installation of multiple specific versions of Go on your system by installing [`goenv`](https://github.com/syndbg/goenv), which reads `.go-version` and automatically selects the correct Go version.
+Refer to the file [`.go-version`](https://github.com/seth-acuitymd/driftctl/blob/master/.go-version) to see which version of Go driftctl is currently built with. Other versions will often work, but if you run into any build or testing problems please try with the specific Go version indicated. You can optionally simplify the installation of multiple specific versions of Go on your system by installing [`goenv`](https://github.com/syndbg/goenv), which reads `.go-version` and automatically selects the correct Go version.
 
 Use Git to clone this repository into a location of your choice. `driftctl` is using [Go Modules](https://blog.golang.org/using-go-modules), and so you should *not* clone it inside your `GOPATH`.
 

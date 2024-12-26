@@ -1,49 +1,44 @@
-## This project is now in maintenance mode. We cannot promise to review contributions. Please feel free to fork the project to apply any changes you might want to make.
+# `driftctl` (fork)
 
+## This project was forked from `snyk/driftctl` which is now in maintenance mode
 
+I ([seth](https://github.com/seth-acuitymd)) am going to see if I can get this project moving again, at least for my own use
 
+I have also forked the `driftctl-action`, which is here: [seth-acuitymd/driftctl-action](https://github.com/seth-acuitymd/driftctl-action)
 
+---
 
-<p align="center">
-  <img width="200" src="https://docs.driftctl.com/img/driftctl_dark.svg" alt="driftctl">
-</p>
+## What is `driftctl`?
 
-<p align="center">
-  <img src="https://circleci.com/gh/snyk/driftctl.svg?style=shield"/>
-  <img src="https://goreportcard.com/badge/github.com/snyk/driftctl"/>
-  <img src="https://img.shields.io/github/license/snyk/driftctl">
-  <img src="https://img.shields.io/github/v/release/snyk/driftctl">
-  <img src="https://img.shields.io/github/go-mod/go-version/snyk/driftctl">
-  <img src="https://img.shields.io/github/downloads/snyk/driftctl/total.svg"/>
-  <img src="https://img.shields.io/docker/pulls/snyk/driftctl"/>
-  <img src="https://img.shields.io/docker/image-size/snyk/driftctl"/>
-  <a href="https://discord.gg/NMCBxtD7Nd">
-    <img src="https://img.shields.io/discord/783720783469871124?color=%237289da&label=discord&logo=discord"/>
-  </a>
-</p>
+`driftctl` is a tool that measures infrastructure as code coverage, and tracks infrastructure drift from your Terraform code.
 
-<p align="center">
-  Measures infrastructure as code coverage, and tracks infrastructure drift.<br>
-  <strong>IaC:</strong> Terraform. <strong>Cloud providers:</strong> AWS, GitHub, Azure, GCP.<br>
-  :warning: <strong>This tool is still in beta state and will evolve in the future with potential breaking changes</strong> :warning:
-</p>
+Supports:
 
-<details>
-  <summary>Packaging status</summary>
-  <a href="https://repology.org/project/driftctl/versions">
-    <img src="https://repology.org/badge/vertical-allrepos/driftctl.svg" alt="Packaging status">
-  </a>
-</details>
+- IaC Providers:
+  - Terraform
+- Cloud Providers:
+  - AWS
+  - Azure
+  - GCP
 
-## Why driftctl ?
+_some_ GitHub Support?
+
+:warning: - No guarantees on this project, I'm just doing this for my own use and hoping it'll pick up steam
+
+---
+
+# Legacy README
+
+## Contents below this are from the original `snyk/driftctl` project and may not be accurate, current, and may be removed at some point
+
+## Why `driftctl` ?
 
 Infrastructure drift is a blind spot and a source of potential security issues.
 Drift can have multiple causes: from team members creating or updating infrastructure through the web console without backporting changes to Terraform, to unexpected actions from authenticated apps and services.
 
 You can't efficiently improve what you don't track. We track coverage for unit tests, why not infrastructure as code coverage?
 
-Spot discrepancies as they happen: driftctl is a free and open-source CLI that warns of infrastructure drifts and fills in the missing piece in your DevSecOps toolbox.
-
+Spot discrepancies as they happen: `driftctl` is a free and open-source CLI that warns of infrastructure drifts and fills in the missing piece in your DevSecOps toolbox.
 
 ## Features
 
@@ -57,8 +52,6 @@ Spot discrepancies as they happen: driftctl is a free and open-source CLI that w
 **[Documentation](https://docs.driftctl.com)**
 
 **[Installation](https://docs.driftctl.com/installation)**
-
-**[Discord](https://discord.gg/7zHQ8r2PgP)**
 
 ## Contribute
 

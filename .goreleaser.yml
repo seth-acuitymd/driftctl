@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://goreleaser.com/static/schema.json
+version: 2
 project_name: driftctl
 dist: bin
 release:
@@ -12,7 +14,16 @@ before:
 signs:
     - signature: "${artifact}.gpg"
       artifacts: checksum
-      args: [ "--batch", "-u", "team-cloud-config+security@snyk.io", "--output", "${signature}", "--detach-sign", "${artifact}" ]
+      args:
+          [
+              "--batch",
+              "-u",
+              "team-cloud-config+security@snyk.io",
+              "--output",
+              "${signature}",
+              "--detach-sign",
+              "${artifact}",
+          ]
 builds:
     - id: "driftctl"
       binary: driftctl
@@ -27,18 +38,18 @@ builds:
           - amd64
           - arm
           - arm64
-          - 386
+          - "386"
       ldflags: "-s -w -X github.com/snyk/driftctl/build.env={{ .Env.ENV }} -X github.com/snyk/driftctl/pkg/version.version={{ .Tag }}"
 archives:
     - name_template: '{{ .ProjectName }}_{{ .Os }}_{{- if eq .Arch "armv6" }}arm{{- else }}{{ .Arch }}{{ end }}'
       format: binary
 checksum:
-    name_template: '{{ .ProjectName }}_SHA256SUMS'
+    name_template: "{{ .ProjectName }}_SHA256SUMS"
     algorithm: sha256
 snapshot:
-    name_template: "{{ .Tag }}-next"
-blobs:
-    - provider: s3
-      bucket: snyk-assets
-      region: us-east-1
-      folder: "cli/driftctl/{{.Tag}}"
+    version_template: "{{ .Tag }}-next"
+# blobs:
+#   - provider: s3
+#     bucket: snyk-assets
+#     region: us-east-1
+#     directory: "cli/driftctl/{{.Tag}}"

@@ -17,7 +17,7 @@ SINGLE_TARGET="${SINGLE_TARGET:-false}"
 goreleaser check
 
 FLAGS=""
-FLAGS+="--rm-dist "
+FLAGS+="--clean "
 FLAGS+="--parallelism 2 "
 
 CMD="release"
